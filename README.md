@@ -1,6 +1,8 @@
 # Ansible role 'ansible-role-pihole'
 
-An Ansible role for setting up pihole on rpi:s
+An Ansible role for setting up pihole on rpi:s.
+
+TODO: Work in progress. Remove blacklisting and stuff ... 
 
 ## Requirements
 - Raspbian
