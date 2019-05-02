@@ -1,0 +1,10 @@
+## roles/ansible-role-pihole/defaults/main.yml
+# vim:ft=yaml.ansible:
+---
+pihole_config: /etc/pihole
+pihole_user: pihole
+pihole_installdir: /opt/pihole
+pihole_dns_servers:
+  - "9.9.9.9"
+  - "8.8.8.8"
+...

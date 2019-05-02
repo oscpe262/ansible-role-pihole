@@ -1,0 +1,4 @@
+## roles/ansible-role-pihole/handlers/main.yml
+# vim:ft=yaml.ansible:
+---
+...
