@@ -1,13 +1,6 @@
 ## roles/ansible-role-pihole/tasks/main.yml
 # vim:ft=yaml.ansible:
 ---
-- name: "Disable WiFi and Bluetooth"
-  copy:
-    src: raspi-blacklist.conf
-    dest: /etc/modprobe.d/raspi-blacklist.conf
-    mode: 0600
-  tags: pihole,admin
-
 - name: "Download Pi-Hole Installer"
   get_url:
     url: https://raw.githubusercontent.com/pi-hole/pi-hole/master/automated%20install/basic-install.sh
@@ -55,6 +48,7 @@
     owner: root
     group: root
     mode: 0644
+    backup: yes
   tags: pihole
 
 - name: "Set default DNS"
